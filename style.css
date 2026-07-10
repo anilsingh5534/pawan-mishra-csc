@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+header{
+    background:#0d6efd;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    font-weight:bold;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#0d6efd,#00b4d8);
+    color:white;
+}
+
+.hero h1{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:white;
+    color:#0d6efd;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.services{
+    padding:40px 20px;
+}
+
+.services h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.card{
+    background:white;
+    margin:15px auto;
+    max-width:350px;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+footer{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+.booking{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.booking form{
+    max-width:400px;
+    margin:auto;
+}
+
+.booking input,
+.booking select,
+.booking textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.booking button{
+    width:100%;
+    padding:12px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+.whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-decoration: none;
+    z-index: 9999;
+}
+.booking button:hover{
+    background:#084fc7;
+}
+.dashboard{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+margin:15px 0;
+}
+
+.admin-card{
+flex:1;
+min-width:100px;
+background:#0d6efd;
+color:white;
+padding:15px;
+border-radius:10px;
+text-align:center;
+font-weight:bold;
+}
+
+.admin-card h2{
+margin-top:10px;
+font-size:28px;
+} 

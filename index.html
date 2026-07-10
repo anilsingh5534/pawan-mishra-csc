@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawan Mishra CSC Center</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h2>🏛️ Pawan Mishra CSC Center</h2>
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <h1>Welcome to Pawan Mishra CSC Center</h1>
+
+    <p>All Government & Online Services Available Here</p>
+
+    <a href="#booking" class="btn">Apply Now</a>
+
+</section>
+
+<section class="services" id="services">
+
+<h2>Our Popular Services</h2>
+
+<div class="card">
+<h3>🪪 Aadhaar Services</h3>
+<p>Update & Correction</p>
+</div>
+
+<div class="card">
+<h3>🆔 PAN Card</h3>
+<p>New & Correction</p>
+</div>
+
+<div class="card">
+<h3>🏥 Ayushman Card</h3>
+<p>Registration</p>
+</div>
+
+<div class="card">
+<h3>🎓 Scholarship Form</h3>
+<p>Apply Online</p>
+</div>
+
+</section>
+
+<section class="booking" id="booking">
+
+<h2>Book Your Service</h2>
+
+<form id="bookingForm">
+
+<input type="text" id="name" placeholder="Full Name" required>
+
+<input type="tel" id="mobile" placeholder="Mobile Number" required>
+
+<input type="text" id="address" placeholder="Village / City" required>
+
+<select id="service" required>
+<option value="">Select Service</option>
+<option>Aadhaar Service</option>
+<option>PAN Card</option>
+<option>Ayushman Card</option>
+<option>Income Certificate</option>
+<option>Caste Certificate</option>
+<option>Domicile Certificate</option>
+<option>Birth Certificate</option>
+<option>Death Certificate</option>
+<option>Scholarship</option>
+<option>PM Kisan</option>
+<option>Voter ID</option>
+<option>Passport</option>
+<option>Driving Licence</option>
+</select>
+
+<textarea id="message" placeholder="Write your message" 
+></textarea>
+
+<label>Upload Document (Aadhaar / PAN / Other)</label>
+
+<input type="file" id="document" 
+accept=".jpg,.jpeg,.png,.pdf">
+<button type="submit">Submit Request</button>
+
+</form>
+
+</section>
+
+<footer>
+   <p>© 2026 Pawan Mishra CSC Center</p>
+   <p>📞 8802273585</p>
+</footer>
+
+<a href="https://wa.me/918802273585"
+class="whatsapp"
+target="_blank">
+💬
+</a>
+<script type="module" src="firebase.js"></script>
+<script type="module" src="script.js"></script>
+
+</body>
+</html>

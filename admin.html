@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CSC Admin Panel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>CSC Admin Panel</h2>
+<div class="dashboard">
+
+<div class="admin-card">
+<h3>Total</h3>
+<h2 id="total">0</h2>
+</div>
+
+<div class="admin-card">
+<h3>Pending</h3>
+<h2 id="pending">0</h2>
+</div>
+
+<div class="admin-card">
+<h3>Completed</h3>
+<h2 id="completed">0</h2>
+</div>
+
+</div>
+
+<br>
+<input
+  type="text"
+  id="searchBox"
+  placeholder="Search by Name or Mobile"
+  onkeyup="loadData()">
+<br><br>
+
+<table border="1" width="100%">
+<thead>
+<tr>
+<th>Name</th>
+<th>Mobile</th>
+<th>Service</th>
+<th>Address</th>
+<th>Message</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody id="tableData">
+
+</tbody>
+
+</table>
+
+<script type="module" src="admin.js"></script>
+
+</body>
+</html>

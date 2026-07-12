@@ -1,4 +1,9 @@
-import { db } from "./firebase.js";
+import { auth, db } from "./firebase.js";
+import {
+  onAuthStateChanged,
+  signOut
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+
 import {
   collection,
   getDocs,
@@ -43,7 +48,6 @@ table.innerHTML += `
 <td>${data.address}</td>
 <td>${data.message}</td>
 <td>${data.status}</td>
-<td>${data.status}</td>
 
 <td>
 ${
@@ -72,7 +76,14 @@ document.getElementById("pending").innerText = pending;
 document.getElementById("completed").innerText = completed;
 }
 
-loadData();
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+        loadData();
+    } else {
+        alert("Please login first!");
+        window.location.replace("login.html");
+    }
+});
 
 window.deleteBooking = async function(id) {
 
@@ -98,4 +109,13 @@ window.completeBooking = async function(id) {
 
   loadData();
 
-}
+};
+document.getElementById("logoutBtn").addEventListener("click", async () => {
+
+    await signOut(auth);
+
+    alert("Logged Out Successfully");
+
+    window.location.replace("login.html");
+
+});
